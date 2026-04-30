@@ -32,10 +32,11 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            # Required to run your Python script from the terminal
-            'global_location = sig_stack.global_location:main'
-          
+            'global_location = sig_stack.global_location:main',
             'perception = sig_stack.perception:main',
+            'global_planner = sig_stack.global_planner:main',
+            'local_planner = sig_stack.localplanner:main',
+            'control = sig_stack.control:main',
         ],
     },
 )
